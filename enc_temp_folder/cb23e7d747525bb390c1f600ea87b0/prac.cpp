@@ -88,13 +88,13 @@ eak = 0;
 printf("숫자를 입력하세요 : %d\n", eak);
 std::cin >> eak;
 bak = eak / 100;
-sak = bak% 100 / 10;
+sak = bak % 100 / 10;
 ilk = eak % 10 / 1;
 printf("100의 자리 : %d\n, 10의자리 : %d\n, 1의 자리 : %d\n", bak, sak, ilk);
 std::cin >> bak,sak,ilk;
 bom = bak + sak + ilk;
 printf("각 자리 수의 합은 : %d\n", bom);
-std::cin >> ;
+std::cin >> bom;
 
 return 0;
 
