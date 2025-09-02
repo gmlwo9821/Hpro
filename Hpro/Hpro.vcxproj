@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Hpro.cpp" />
+    <ClCompile Include="prac.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

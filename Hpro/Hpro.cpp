@@ -72,24 +72,60 @@ int main() //앤트리 포인트 코드가 시작되는 곳
 //    //number = 5.3;  // 소주점 아래는 모두 버림 5만 저장
 //    //number = 5 / 2; // 2.5 ===> 0.5 버림
 //
-//    int number;      // number라는 이름을 가진 int(인티저)변수를 선언하고 거기에 0을 대입한다.
-//     number = 0;   //변수에 값을 대입
-//    scanf("%d", &number); //숫자를 하나 입력 받고(c)
-//    printf("입력한 숫자는 : %d\n", number);
-//   
-//    std::cin >> number; //숫자를 하나 입력 받기(c++)
-//    printf("입력한 숫자는 : %d\n", number);
-//    
-//    //프로그램을 실행 했을 때 나이를 물어보고 입력받은 숫자를 그대로 출력 아래
-//
-   printf("나이를 입력하세요 : %d\n", number);
-    return 0;
+   int number;      // number라는 이름을 가진 int(인티저)변수를 선언하고 거기에 0을 대입한다.
+   number = 0;   //변수에 값을 대입
+   scanf("%d", &number); //숫자를 하나 입력 받고(c)
+   printf("입력한 숫자는 : %d\n", number);
+   std::cin >> number; //숫자를 하나 입력 받기(c++)
+   printf("입력한 숫자는 : %d\n", number);
+  
+//프로그램을 실행 했을 때 나이를 물어보고 입력받은 숫자를 그대로 출력 아래
+
+  printf("나이를 입력하세요 : %d\n", number);
+    
 
     // 이스케이프 스퀸스
     // \n 줄바꾸기
     // \t 탭 넣기
     // \\ : \찍기
     // 캐리지 리턴
+
+
+  int number1 = 0;
+  int number2 = 0;
+
+  printf("숫자 1을 입력하시오 : ");
+  std::cin >> number1;
+  printf("숫자 2를 입력하시오 : ");
+  std::cin >> number2;
+  int number3 = number1 + number2;
+  printf("두 숫자의 합은 %d입니다.,", number3);
+  //printf 문을 이용해서 아래와 같은 모양 찍어보기
+  printf("*\n");
+  printf("***\n");
+  printf("*****\n");
+
+  //특수문자를 이용해서 미로 모양 출력해보기
+  printf("□□□□□□□□\n");
+  printf("□ □  □ □\n");
+  printf("□  □   □\n");
+  printf("□□□□□□□□\n");
+  //두 수를 입력받아 스왑하기
+  int number1 = 0;
+  int number2 = 0;
+  printf("숫자를 하나 입력하세요 :");
+  std::cin >> number1
+  printf("숫자를 하나 더 입력하세요 :");
+  std::cin >> number2;
+  
+  //사형의 가로, 세로를 입력 받아 넓이를 출력하기
+
+  //두 수를 입력 받아 나머지를 출력하기(% 연산자 사용 금지)
+
+
+
+
+  return 0;
 }
 //커밋 : 세이브 포인트 만들기
 
@@ -98,17 +134,6 @@ int main() //앤트리 포인트 코드가 시작되는 곳
 //커밋 연습 ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ
 // 추가할 내용
 
-int number1 = 0;
-int number2 = 0;
-printf("숫자 1을 입력하시오 : ");
-std::cin >> number1;
-printf("숫자 2를 입력하시오 : ");
-std::cin >> number1;
-int number3 = number1 + number2;
-printf("두 숫자의 합은 %d입니다.", number3);
-
-return 0;
-}
 
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
