@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="Hpro.cpp" />
     <ClCompile Include="prac.cpp" />
+    <ClCompile Include="ninthree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />
