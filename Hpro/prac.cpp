@@ -299,4 +299,6 @@ int number = 10; //사람이 알아보기 위해 10진수로 값을 대입
 		|| = or       ||의 양쪽에 하나라도 true가 있으면 true 아니면 false
 		 ! = not	  ! 뒤에 bool이 true면 false, false면 true
 		*/
+
+          //변수는 사용하기 직전에 선언하기
 //}
