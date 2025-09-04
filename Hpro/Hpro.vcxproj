@@ -126,6 +126,7 @@
     <ClCompile Include="Hpro.cpp" />
     <ClCompile Include="prac.cpp" />
     <ClCompile Include="ninthree.cpp" />
+    <ClCompile Include="Nfour.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

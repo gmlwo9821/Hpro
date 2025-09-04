@@ -27,6 +27,9 @@
     <ClCompile Include="ninthree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Nfour.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

@@ -1,9 +1,9 @@
-#include <iostream> 
-#include <cstdio>  
-#include <stdio.h>  
-#include "header.h"
-int main()
-{
+//#include <iostream> 
+//#include <cstdio>  
+//#include <stdio.h>  
+//#include "header.h"
+//int main()
+//{
 	////1. 숫자를 입력받아 양수 인지 음수인지 0인지 출력하기
 	//float a = 0;
 	//printf("1번 문제 숫자를 입력하세요.");
@@ -120,65 +120,66 @@ int main()
 	//	
 	//	}
 
+	//(a !=b) : a와b가 다르다.
 
-//1. 숫자를 입력받아 양수인지 음수인지 0인지 출력하기
-	int InputNumber = 0;
-	printf("숫자를 입력하세요.");
-	std::cin >> InputNumber;
-	if (InputNumber > 0)
-	{
-		printf("양수 입니다.\n");
-	}
-		else if(InputNumber <0)
-		{
-		printf("음수 입니다.\n");
-		}
-		else
-	{
-		printf("0입니다.\n");
-	}
-	
-	
-//2. 숫자를 입력받아 홀수인지 짝수인지 출력하기 -- 논리 연산자로 가능한지 확인해보기.
-	int Number1 = 0;
-	printf("숫자를 입력하세요 : ");
-	std::cin >> Number1;
-	if (Number1 % 2 == 0)
-	{
-		printf("짝수 입니다\n");
-	}
-	else
-	{
-		printf("홀수 입니다.\n");
-	}
-//3. 두 수를 입력 받아 더 큰 수를 출력하기.같을 경우는 같다고 출력.
-	int Number2 = 0;
-	int Number3 = 0;
-	printf("숫자를 두 번 입력하세요 : ");
-	std::cin >> Number2 >> Number3;
-	if (Number2 > Number3)
-	{
-		printf("숫자 %d가 %d보다 더 큽니다.\n",Number2,Number3);
-	}
-	else
-	{
-		printf("숫자 %d가 %d보다 더 큽니다.\n",Number3,Number2);
-	}
-//4. 나이와 키를 입력 받아, 6세 이상, 120cm 이상일 때 롤러코스터 탑승 가능, 그 외에는 불가능으로 출력
-	const unsigned int AgeLimit = 5;
-	const float HeightLimit = 120.0f;
-	unsigned int Age = 0;
-	float Height = 0.0f;
-	printf("나이와 키 순서로 입력해주세요 : ");
-	std::cin >> Age >> Height;
-	if (Age > AgeLimit && Height >= HeightLimit)
-	{
-		printf(" 탑승 가능\n");
-	}
-	else
-	{
-		printf("탑승 불가능\n");
-	}
+////1. 숫자를 입력받아 양수인지 음수인지 0인지 출력하기
+//	int InputNumber = 0;
+//	printf("숫자를 입력하세요.");
+//	std::cin >> InputNumber;
+//	if (InputNumber > 0)
+//	{
+//		printf("양수 입니다.\n");
+//	}
+//		else if(InputNumber <0)
+//		{
+//		printf("음수 입니다.\n");
+//		}
+//		else
+//	{
+//		printf("0입니다.\n");
+//	}
+//	
+//	
+////2. 숫자를 입력받아 홀수인지 짝수인지 출력하기 -- 논리 연산자로 가능한지 확인해보기.
+//	int Number1 = 0;
+//	printf("숫자를 입력하세요 : ");
+//	std::cin >> Number1;
+//	if (Number1 % 2 == 0)
+//	{
+//		printf("짝수 입니다\n");
+//	}
+//	else
+//	{
+//		printf("홀수 입니다.\n");
+//	}
+////3. 두 수를 입력 받아 더 큰 수를 출력하기.같을 경우는 같다고 출력.
+//	int Number2 = 0;
+//	int Number3 = 0;
+//	printf("숫자를 두 번 입력하세요 : ");
+//	std::cin >> Number2 >> Number3;
+//	if (Number2 > Number3)
+//	{
+//		printf("숫자 %d가 %d보다 더 큽니다.\n",Number2,Number3);
+//	}
+//	else
+//	{
+//		printf("숫자 %d가 %d보다 더 큽니다.\n",Number3,Number2);
+//	}
+////4. 나이와 키를 입력 받아, 6세 이상, 120cm 이상일 때 롤러코스터 탑승 가능, 그 외에는 불가능으로 출력
+//	const unsigned int AgeLimit = 5;
+//	const float HeightLimit = 120.0f;
+//	unsigned int Age = 0;
+//	float Height = 0.0f;
+//	printf("나이와 키 순서로 입력해주세요 : ");
+//	std::cin >> Age >> Height;
+//	if (Age > AgeLimit && Height >= HeightLimit)
+//	{
+//		printf(" 탑승 가능\n");
+//	}
+//	else
+//	{
+//		printf("탑승 불가능\n");
+//	}
 //5. 점수를 입력 받아 90점 이상은 A, 80점 이상은 B, 70점 이상은 C, 60점 이상은 D, 그 이하는 F라고 출력하기
     
 //6. 세 과목의 점수를 입력받아, 세 과목 모두 60점 이상이면 "합격", 아니면 "불합격"을 출력하는 프로그램을 작성하세요. 한과목이라도 40점 미만이면 불합격 출력하기
@@ -187,5 +188,5 @@ int main()
 
 
 
-	return 0;
-}
+	/*return 0;
+}*/
