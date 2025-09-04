@@ -202,39 +202,42 @@ int main()
 		// 1 ~ 6까지의 숫자를 랜덤으로 구하고 싶다.
 		int RandomNumber1 = rand() % 6 + 1;
 
-		//C++스타일
-		std::random_device RandomDivece;
-		std::mt19937 Generate(RandomDivece());
-		
-		printf("균등분포 : ");
-		std::unifrom_int_distribution<> uniformDis(1, 100);  //1~100사이 숫자를 뽑아줌
-		for (int i = 0; i < 10; i++)
-		{
-			int Number = uniformDis(Generate);
-			printf("%d", Number);
-			if (i < 9)
-			{
-				printf(",");
-			}
-		 }
-			printf("\n");
+		////C++스타일
+		//std::random_device RandomDivece;
+		//std::mt19937 Generate(RandomDivece());
+		//
+		//printf("균등분포 : ");
+		//std::unifrom_int_distribution<> uniformDis(1, 100);  //1~100사이 숫자를 뽑아줌
+		//for (int i = 0; i < 10; i++)
+		//{
+		//	int Number = uniformDis(Generate);
+		//	printf("%d", Number);
+		//	if (i < 9)
+		//	{
+		//		printf(",");
+		//	}
+		// }
+		//	printf("\n");
 
 
-			printf("정규분포 : ");
-			std::noraml_distribution<> normalDis(80, 10);
-			for (int i = 0; i < 10; i++)
-			{
-				float fNumber = normalDis(Generate);
-				printf("%.2f", fNumber);
-				if (i < 9)
-				{
-					printf(",");
-				}
-			}
-			printf("\n");
+		//	printf("정규분포 : ");
+		//	std::noraml_distribution<> normalDis(80, 10);
+		//	for (int i = 0; i < 10; i++)
+		//	{
+		//		float fNumber = normalDis(Generate);
+		//		printf("%.2f", fNumber);
+		//		if (i < 9)
+		//		{
+		//			printf(",");
+		//		}
+		//	}
+		//	printf("\n");
 
 
 			// 1. 주사위를 100만번 돌려서 6이 몇 번 나왔는지 카운팅해서 출력하기
+		int count = 0;
+		srand(time(0));
+			
 			// 2. 가위, 바위,보게임 만들기
 			//     -3선승제
 			//		-enum활용
