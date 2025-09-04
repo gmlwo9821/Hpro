@@ -109,28 +109,58 @@ int main()
 		}
 	}
 
-	
-	//	3. 숫자를 하나 입력 받고 0부터 입력받은 수까지 숫자 중 홀수만 출력하기
-		int inputnumber = 0;
-		printf("숫자를 하나 입력하세요 : ");
-		while (inputnumber % 2 == 0)
-		{
-			std::cin >> inputnumber;
-			
-			printf("%d\n",inputnumber);
-		}
-
-	    
-	//	4. 1~100사이의 숫자 중에 7의 배수만 출력하기
-		for (int InputNumber3 = 1; InputNumber3 <= 100; InputNumber3++)
-		{
-			if (InputNumber3 % 7 == 0)
-			{
-				printf("%d\n", InputNumber3);
-			}
-		}
+		//C++스타일
+		std::random_device RandomDivece;
+		std::mt19937 Generate(RandomDivece());
 		
-	
+		printf("균등분포 : ");
+		std::unifrom_int_distribution<> uniformDis(1, 100);  //1~100사이 숫자를 뽑아줌
+		for (int i = 0; i < 10; i++)
+		{
+			int Number = uniformDis(Generate);
+			printf("%d", Number);
+			if (i < 9)
+			{
+				printf(",");
+			}
+		 }
+			printf("\n");
+
+
+			printf("정규분포 : ");
+			std::noraml_distribution<> normalDis(80, 10);
+			for (int i = 0; i < 10; i++)
+			{
+				float fNumber = normalDis(Generate);
+				printf("%.2f", fNumber);
+				if (i < 9)
+				{
+					printf(",");
+				}
+			}
+			printf("\n");
+
+
+			// 1. 주사위를 100만번 돌려서 6이 몇 번 나왔는지 카운팅해서 출력하기
+			// 2. 가위, 바위,보게임 만들기
+			//     -3선승제
+			//		-enum활용
+			// 3. 하이로우
+			//		-컴퓨터가 1~100사이의 임의의 숫자를 선택하고
+			//		사용자가 맞출 때까지 입력을 받아 " 더 높게","더 낮게" 등의 힌트를 제공하는 게임
+			//		-5번 안에 맞춰야 승리
+			//	4. 공포 게임의 인벤토리를 비트플래그로 표현하기
+			//		- 아이템 종류를 나타내는 enum을 만들고
+			//		- 특정 아이템을 추가하고 삭제하는 예시 보여주기
+
+
+
+
+
+
+
+
+
 
 	//  5. 입력받은 숫자만큼의 층을 가진 피라미드 그리기
     //	    3을 입력받았으면 
